@@ -1,5 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -89,46 +87,6 @@ nav {
     width: 80%;
 }
 
-.logo-container {
-    width: 15%;
-}
-
-.logo {
-    justify-content: center;
-}
-
-@media (max-width: 800px) {
-    nav {
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-    .navs {
-        width: 100%;
-    }
-    .logo-container {
-        width: 100%;
-        text-align: center;
-        padding: 25px 0px;
-    }
-}
-
-@media (max-width: 500px) {
-    .navs {
-        flex-direction: column;
-        height: 250px;
-    }    
-    .navs a {     
-        border-bottom: 1px solid grey;
-        padding: 10px 0px;
-        width: 100%;
-        text-align: center;
-    }
-    .logo-container {
-        padding: 25px 0px 10px 0px;
-        border-bottom: 1px solid grey;
-    }
-}
-
 @keyframes ani {
     from {background-color: white;}
     to {background-color: yellow;}
@@ -139,119 +97,92 @@ a:hover {
     animation-duration: 3s;
 } 
 
-/* header */
-
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 25px 0px;
-}
-
-.header-left {
-    text-align: center;
-}
-
-h1{
-    font-size: 75px;
-    margin: 0;
-}
-
-.button-box {
-    padding: 20px;
-    text-align: center;
-}
-
-.button {
-    border: 2px solid black;
-    padding: 5px;
-    width: 125px;
-    text-align: center;
-    margin-left: 70px;
-}
-
 @media (max-width: 800px) {
-    header img {
-       display: none; 
+    nav {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-bottom: 10px;
     }
-    .header-left {
+    .navs {
+        width: 100%;
+    }
+    .logo-container {
+        width: 100%;
+        text-align: center;
         padding: 25px 0px;
     }
 }
 
-/* section above image */
+/* header */
 
-.upper-section {
-    border-top: 2px solid black;
-    padding: 25px 0px;
-    display:flex;
-    justify-content: space-between;
-}
-
-.us-left {
-    width: 45%;
-}
-
-.us-right {
-    width: 45%;
-}
-
-@media (max-width: 500px) {
-    .upper-section {
-        flex-direction: column;
-    }
-    .us-left, .us-right {
-        width: 100%;
-    }
-    .us-left{
-        padding-bottom: 25px;
-    }
-}
-
-/* image */
-
-.middle-img {
+.services-header-img {
     width: 100%;
-}
-
-/* lower-section */
-
-.lower-section {
-    border-bottom: 2px solid black;
-    padding: 25px 0px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.ls-left, .ls-middle, .ls-right {
-    width: 30%;
-}
-
-@media (max-width: 500px) {
-    .lower-section {
-        flex-direction: column;
-    }
-    .ls-left, .ls-middle, .ls-right {
-        width: 100%;
-    }
-    .ls-left, .ls-middle {
-        padding-bottom: 25px;
-    }
-}
-
-/* contact */
-
-.contact {
-    padding: 25px 0px;
-}
-
-.phone {
     padding: 10px 0px;
 }
 
-/* footer */
+/* section below image */
+
+.services {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.areas {
+    padding: 10px 0px;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.area {
+    width: 48%;
+    border: 2px solid black;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.button {
+    padding: 10px 25px;
+    margin: 10px 0px;
+    width: 35%;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.bottom-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 25px 0px;
+}
+
+.ls {
+    width: 45%;
+    margin: 10px 0px;
+}
+
+.bottom-section img {
+    width: 45%;
+    margin: 10px 0px;
+}
+
+ol {
+    list-style-type: circle;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+li {
+    margin: 15px 0px;
+}
 
 footer {
     text-align: center;
-    margin-bottom: 50px;
+    margin: 100px 0px 50px 0px;
 }
