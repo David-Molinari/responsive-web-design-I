@@ -111,6 +111,23 @@ nav {
     }
 }
 
+@media (max-width: 500px) {
+    .navs {
+        flex-direction: column;
+        height: 250px;
+    }    
+    .navs a {     
+        border-bottom: 1px solid grey;
+        padding: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .logo-container {
+        padding: 25px 0px 10px 0px;
+        border-bottom: 1px solid grey;
+    }
+}
+
 @keyframes ani {
     from {background-color: white;}
     to {background-color: yellow;}
@@ -178,6 +195,18 @@ h1{
     width: 45%;
 }
 
+@media (max-width: 500px) {
+    .upper-section {
+        flex-direction: column;
+    }
+    .us-left, .us-right {
+        width: 100%;
+    }
+    .us-left{
+        padding-bottom: 25px;
+    }
+}
+
 /* image */
 
 .middle-img {
@@ -195,6 +224,18 @@ h1{
 
 .ls-left, .ls-middle, .ls-right {
     width: 30%;
+}
+
+@media (max-width: 500px) {
+    .lower-section {
+        flex-direction: column;
+    }
+    .ls-left, .ls-middle, .ls-right {
+        width: 100%;
+    }
+    .ls-left, .ls-middle {
+        padding-bottom: 25px;
+    }
 }
 
 /* contact */
