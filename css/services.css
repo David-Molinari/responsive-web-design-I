@@ -113,6 +113,23 @@ a:hover {
     }
 }
 
+@media (max-width: 500px) {
+    .navs {
+        flex-direction: column;
+        height: 250px;
+    }    
+    .navs a {     
+        border-bottom: 1px solid grey;
+        padding: 10px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .logo-container {
+        padding: 25px 0px 10px 0px;
+        border-bottom: 1px solid grey;
+    }
+}
+
 /* header */
 
 .services-header-img {
@@ -155,6 +172,18 @@ a:hover {
     border-radius: 25px;
 }
 
+@media (max-width: 800px) {
+    .button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .button {
+        width: 75%;
+    }
+}
+
 .bottom-section {
     display: flex;
     width: 100%;
@@ -170,6 +199,15 @@ a:hover {
 .bottom-section img {
     width: 45%;
     margin: 10px 0px;
+}
+
+@media (max-width: 800px) {
+    .bottom-section img {
+        display: none;
+    }
+    .ls {
+        width: 100%;
+    }
 }
 
 ol {
